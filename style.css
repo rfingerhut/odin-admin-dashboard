@@ -1,0 +1,102 @@
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar{
+    background-color: red;
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.dashboard-logo{
+    display: flex;
+}
+
+.logo, .dashboard-logo p{
+    width: 100%;
+    flex: 1;
+    align-self: center;
+}
+
+.menu li{
+    list-style-type: none;
+}
+
+.header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-top{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.search{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.search-bar{
+    width: 400px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 15px;
+}
+
+.user-profile{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.header-bottom{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.user-welcome{
+    display: grid;
+    grid-auto-flow:column;
+}
+
+.welcome-text{
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.main-body{
+    background-color: rgb(167, 167, 255);
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.body-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+
+.card{
+    background-color: white;
+    padding: 5px;
+}
+
+.anncouncement-trending-container{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 50px;
+}
+
+.announcement-trending-wrapper div {
+    background-color: white;
+    padding: 5px;
+}
