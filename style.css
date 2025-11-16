@@ -4,6 +4,8 @@
 
 :root{
 --_gray-background: rgb(233, 234, 235);
+--_blue-background:rgb(43, 169, 227);
+--_blue-hover: rgb(106, 190, 228);
 }
 
 body{
@@ -18,7 +20,7 @@ body{
 }
 
 .sidebar{
-    background-color: rgb(43, 169, 227);
+    background-color: var(--_blue-background);
     display: grid;
     grid-template-rows: 1fr 11fr;
     color: white;
@@ -52,10 +54,39 @@ body{
     gap: 5px;
 }
 .menu li{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    height: 100%;
+
     list-style-type: none;
-    line-height: 0;
+
     font-weight: 600;
     font-size: 1.2rem;
+
+    padding: 4px;
+    margin: 4px;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;  
+}
+
+.menu li>p{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-content: center;
+}
+
+.menu-icon{
+    width: min(100%, 30px);
+    justify-self: center;
+    fill: white;
+}
+
+.menu li:hover{
+    background-color: var(--_blue-hover);
+    border-radius: 4px;
 }
 
 .header{
@@ -63,6 +94,7 @@ body{
     grid-template-rows: 1fr 1fr;
     background-color: white;
     padding: 20px 50px;
+    gap: 20px;
 }
 
 .header-top{
@@ -75,6 +107,12 @@ body{
     align-self: center;
     justify-self: center;
     width: 2rem;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+
+.icon:hover{
+    fill: gray;
 }
 
 .search{
@@ -110,17 +148,61 @@ body{
 
 .header-bottom{
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: 2fr 1fr;
 }
 
 .user-welcome{
     display: grid;
-    grid-auto-flow:column;
+    grid-template-columns: 1fr 10fr;
+}
+
+.user-welcome svg{
+    width: 100%;
+
 }
 
 .welcome-text{
     display: grid;
     grid-auto-flow: row;
+    padding-left: 15px;
+}
+
+.welcome-text p, h2{
+    margin: 0;
+}
+
+.welcome-text p{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.action-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    gap: 5px;
+}
+
+.action-buttons button{
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    background-color: var(--_blue-background);
+    color: white;
+
+    height: 40px;
+    width: min(100px, 100%);
+    
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.action-buttons button:hover{
+    background-color: rgb(106, 190, 228);
 }
 
 .main-body{
