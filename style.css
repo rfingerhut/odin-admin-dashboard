@@ -228,7 +228,7 @@ body{
 
 .card{
     background-color: white;
-    padding: 40px 20px;
+    padding: 30px 20px;
     border-radius: 10px;
     border-left: 10px solid orange;
     display: grid;
@@ -252,10 +252,24 @@ body{
 }
 
 .interaction-buttons{
-    border: 1px solid green;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 2rem);
+    grid-template-rows: 2rem;
+    align-content: center;
+    justify-content: end;
+    gap: 15px;
+    margin-top: 1rem;
 }
+
+
+
+.interaction-buttons button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
 
 .anncouncement-trending-container{
     display: grid;
