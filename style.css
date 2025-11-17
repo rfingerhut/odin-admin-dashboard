@@ -215,7 +215,7 @@ body{
 
 .body-content{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 15px;
     padding: 0 50px;
 }
@@ -261,8 +261,6 @@ body{
     margin-top: 1rem;
 }
 
-
-
 .interaction-buttons button{
     background-color: transparent;
     border: none;
@@ -270,14 +268,36 @@ body{
     cursor: pointer;
 }
 
-
-.anncouncement-trending-container{
-    display: grid;
-    grid-auto-flow: row;
-    gap: 50px;
+.announcement-trending-section{
+    display: flex;
+    flex-direction: column;
 }
 
-.announcement-trending-section div {
+.announcement-cards-container, .trending-cards-container {
     background-color: white;
     padding: 5px;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.announcement-cards-container>*:not(:last-child){
+    border-bottom: 1px solid gray;
+}
+
+.announcement-card{
+    padding: 1rem 10px;
+}
+
+.announcement-card h6{
+    font-size: 0.9rem;
+    margin: 0;
+    margin-bottom: 1px;
+}
+
+.announcement-card p{
+    margin: 0;
+    color: gray;
+    font-size: 0.8rem;
 }
