@@ -204,6 +204,13 @@ body{
     background-color: var(--_gray-background);
     display: grid;
     grid-auto-flow: row;
+    gap: 40px;
+}
+
+.section-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .body-content{
@@ -231,7 +238,7 @@ body{
     gap: 50px;
 }
 
-.announcement-trending-wrapper div {
+.announcement-trending-section div {
     background-color: white;
     padding: 5px;
 }
