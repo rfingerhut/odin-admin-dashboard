@@ -278,8 +278,8 @@ body{
     padding: 5px;
     border-radius: 10px;
     padding: 1.5rem;
-    display: grid;
-    grid-auto-flow: row;
+    /* display: grid;
+    grid-auto-flow: row; */
 }
 
 .announcement-cards-container>*:not(:last-child){
@@ -300,4 +300,31 @@ body{
     margin: 0;
     color: gray;
     font-size: 0.8rem;
+}
+
+.trending-cards-container{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 15px;
+}
+
+.trending-card{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+}
+
+.trending-user{
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+}
+
+.trending-user p{
+    margin: 0;
+}
+
+.trending-user p:not(.user-name){
+    color: gray;
+    margin-top: 1px;
 }
