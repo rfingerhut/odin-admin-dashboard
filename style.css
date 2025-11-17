@@ -226,10 +226,35 @@ body{
     gap: 15px;
 }
 
-
 .card{
     background-color: white;
-    padding: 5px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    border-left: 10px solid orange;
+    display: grid;
+    grid-auto-flow: row;
+    height: min(100%, 1fr);
+    gap: 0;
+}
+
+.card-title{
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 500;
+    align-self: end;
+}
+
+.card-text{
+    margin: 0;
+    font-size: 1rem;
+    color:gray;
+    align-self: start;
+}
+
+.interaction-buttons{
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .anncouncement-trending-container{
