@@ -120,6 +120,8 @@ body{
     border-radius: 15px;
     justify-self: stretch;
     align-self: center;
+    border: none;
+    outline: none;
 }
 
 .user-profile{
